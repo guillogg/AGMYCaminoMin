@@ -32,7 +32,7 @@ package tp2;
 
 		// A utility function to print the constructed MST
 		// stored in parent[]
-		void printMST(int parent[], int graph[][])
+		void printAGM(int parent[], int graph[][])
 		{
 			System.out.println("Edge \tWeight");
 			for (int i = 1; i < V; i++)
@@ -42,7 +42,7 @@ package tp2;
 
 		// Function to construct and print MST for a graph
 		// represented using adjacency matrix representation
-		void primMST(int graph[][])
+		void primAGM(int graph[][])
 		{
 			// Array to store constructed MST
 			int parent[] = new int[V];
@@ -93,7 +93,7 @@ package tp2;
 			}
 
 			// print the constructed MST
-			printMST(parent, graph);
+			printAGM(parent, graph);
 		}
 
 		public static void main(String[] args)
@@ -114,7 +114,7 @@ package tp2;
 										{ 0, 5, 7, 1, 0 } };
 
 			// Print the solution
-			t.primMST(graph);
+			t.primAGM(graph);
 		}
 	}
 	
